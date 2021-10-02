@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+header .logo {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.header-computer {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        display: none
+    }
+
+    .header-computer {
+        display: block;
+        position: absolute;
+        z-index: 5
+    }
+
+    .header-computer .logo {
+        width: 70%;
+        margin: 60px 30px 90px 0;
+    }
+
+    .header-computer .info p {
+        margin-bottom: 40px;
+    }
+
+    .header-computer .info p a {
+        color: #000;
+        font-size: 24px;
+    }
+}

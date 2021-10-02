@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lato',
+    sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+    padding: 25px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (min-width: 992px) {
+    #root {
+        padding: 0;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+img {
+    max-width:100%;
 }
 
-.App-link {
-  color: #61dafb;
+ul,ol,p{
+    list-style: none;
+    margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover{
+    text-decoration: none;
 }
+
+
+.news,
+.schedule,
+.gallery {
+    margin-bottom: 70px;
+}
+
+.news .title-row,
+.schedule .title-row {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news .title,
+.schedule .title,
+.gallery .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.gallery .title{
+    margin: 0 0 15px 0;
+}
+
+.img-group {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .img-group{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .img-group .pic{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 10px;
+    }
+
+    .img-group .pic img{
+        object-fit: cover;
+        object-position: 50% 15%;
+    }
+}
+
+
+.news .view,
+.schedule .view {
+    position:relative;
+    font-weight:500px;
+    
+}
+
+.news .view a,
+.schedule .view a {
+    color:#000
+    
+}
+
+.news .view::before,
+.schedule .view::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition:.5s
+    
+}
+
+.news .view:hover::before,
+.schedule .view:hover::before {
+    width: 0%;
+}
+
+.news .item {
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+    margin-bottom: 20px;
+    color:#000
+}
+.news .time {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(22%);
+}
+.news .date {
+    margin-bottom: 5px;
+}
+.news .cate {
+    text-align: center;
+    border:1px solid #000;
+    padding:1px 10px
+}
+.news .content {
+    width: calc(70%);
+}
+.news .content p,
+.schedule .content p {
+    letter-spacing:2px;
+    font-size: 15px;
+    color:rgba(0,0,0,.6)
+}
+
+@media screen and (min-width: 992px) {
+    .news .time {
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        width: 18%;
+    }
+
+    .news .cate {
+        text-align: center;
+        border: 1px solid #000;
+        padding: 2px 15px
+    }
+
+    .news .content {
+        width: 77%;
+    }
+}
+
+.schedule .item {
+    display: flex;
+    justify-content:space-between;
+    border-bottom:1px dashed #000;
+    padding:15px;
+    color:#000;
+}
+
+.schedule .item .date{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 20%;
+}
+
+.schedule .item .day{
+    font-size: 30px;
+}
+.schedule .item .week{
+    border-bottom: 1px solid #000;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+.schedule .item .content{
+    width: 70%;
+}
+
+.schedule .item .content .cate-time {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.schedule .item .cate a{
+    background-color: #000;
+    color:#fff;
+    padding:1px 30px;
+
+}
+
+.schedule .item .time{
+    margin-left: 10px;
+    color:rgba(0, 0, 0, .6)
+}
+
+@media screen and (min-width: 992px) {
+
+    .schedule .item .date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 15%;
+        margin-left: 15px;
+    }
+    .schedule .item .content {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .schedule .item .cate a {
+        padding: 5px 30px;
+
+    }
+}
+
+
+.gallery .view{
+   display: flex;
+   justify-content: center;
+   
+}
+.gallery .view a{
+    display:inline-block;
+    position: relative;
+    color:#000;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    padding:15px 60px;
+    
+}
+
+.gallery .view a .arrow {
+    position: absolute;
+    right: -30%;
+    top: 15%;
+}
+
+@media screen and (min-width: 992px) {
+    .gallery .view {
+        display: none
+    }
+}
+
