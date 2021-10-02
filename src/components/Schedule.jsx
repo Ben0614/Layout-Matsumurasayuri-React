@@ -4,13 +4,18 @@ export default function Schedule() {
   return (
     <div class="container">
       <div class="schedule">
+        {/* 標題行 */}
         <div class="title-row">
+          {/* 標題 */}
           <div class="title">SCHEDULE</div>
+          {/* 展示更多按鈕 */}
           <div class="view">
             <a href="#/">VIEW ALL</a>
           </div>
         </div>
+        {/* item-gorup */}
         <div class="item-group">
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="date">
@@ -29,6 +34,7 @@ export default function Schedule() {
               </div>
             </div>
           </a>
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="date">
@@ -46,6 +52,7 @@ export default function Schedule() {
               </div>
             </div>
           </a>
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="date">

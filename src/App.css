@@ -12,13 +12,8 @@
 
 @media screen and (min-width: 992px) {
     #root {
-        padding: 0;
+        padding: 0 0 25px 0;
     }
-}
-
-
-img {
-    max-width:100%;
 }
 
 ul,ol,p{
@@ -31,12 +26,14 @@ a:hover{
 }
 
 
+/* 三個區域與下一個區域的間隔 */
 .news,
 .schedule,
 .gallery {
     margin-bottom: 70px;
 }
 
+/* flex讓標題行水平對齊 */
 .news .title-row,
 .schedule .title-row {
     display:flex;
@@ -45,6 +42,7 @@ a:hover{
     margin-bottom: 15px;
 }
 
+/* 標題size */
 .news .title,
 .schedule .title,
 .gallery .title {
@@ -52,21 +50,25 @@ a:hover{
     font-weight: 500;
 }
 
+/* gallery沒有-row，所以要額外加mb15 */
 .gallery .title{
     margin: 0 0 15px 0;
 }
 
+/* 圖片牆，手機隱藏 */
 .img-group {
     display: none;
 }
 
 @media screen and (min-width: 992px) {
+    /* 圖片牆，flex換行，一行四張 */
     .img-group{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
+    /* 圖片尺寸 */
     .img-group .pic{
         width: 270px;
         height: 270px;
@@ -79,7 +81,7 @@ a:hover{
     }
 }
 
-
+/* 展示更多按鈕 */
 .news .view,
 .schedule .view {
     position:relative;
@@ -93,6 +95,7 @@ a:hover{
     
 }
 
+/* 按鈕底下的黑線 */
 .news .view::before,
 .schedule .view::before {
     content:'';
@@ -106,11 +109,13 @@ a:hover{
     
 }
 
+/* 碰觸就消失 */
 .news .view:hover::before,
 .schedule .view:hover::before {
     width: 0%;
 }
 
+/* 裡面有左右兩區，flez水平對齊 */
 .news .item {
     display:flex;
     justify-content:space-between;
@@ -118,23 +123,30 @@ a:hover{
     margin-bottom: 20px;
     color:#000
 }
+
+/* 時間垂直對齊 */
+/* 左側時間寬度22% */
 .news .time {
     display:flex;
     flex-direction: column;
     align-items: center;
     width: calc(22%);
 }
+
 .news .date {
     margin-bottom: 5px;
 }
+
 .news .cate {
     text-align: center;
     border:1px solid #000;
     padding:1px 10px
 }
+/* 右側寬度70% 剩下8%當作間隔*/
 .news .content {
     width: calc(70%);
 }
+
 .news .content p,
 .schedule .content p {
     letter-spacing:2px;
@@ -143,6 +155,7 @@ a:hover{
 }
 
 @media screen and (min-width: 992px) {
+    /* 桌機 時間和類別水平 */
     .news .time {
         flex-direction: row;
         justify-content:space-between;
@@ -156,11 +169,13 @@ a:hover{
         padding: 2px 15px
     }
 
+    /* 調整寬度 */
     .news .content {
         width: 77%;
     }
 }
 
+/* flex水平分成兩區 */
 .schedule .item {
     display: flex;
     justify-content:space-between;
@@ -169,6 +184,7 @@ a:hover{
     color:#000;
 }
 
+/* 時間垂直排列 */
 .schedule .item .date{
     display:flex;
     flex-direction: column;
@@ -188,6 +204,7 @@ a:hover{
 .schedule .item .content{
     width: 70%;
 }
+
 
 .schedule .item .content .cate-time {
     display: flex;
@@ -209,12 +226,12 @@ a:hover{
 @media screen and (min-width: 992px) {
 
     .schedule .item .date {
-        display: flex;
-        flex-direction: column;
         align-items: flex-start;
         width: 15%;
         margin-left: 15px;
     }
+
+    /* flex垂直置中對齊 */
     .schedule .item .content {
         display:flex;
         flex-direction: column;
@@ -228,12 +245,14 @@ a:hover{
     }
 }
 
-
+/* 手機 展示更多按鈕 */
 .gallery .view{
    display: flex;
    justify-content: center;
    
 }
+
+/* 加邊框 padding撐開 */
 .gallery .view a{
     display:inline-block;
     position: relative;
@@ -241,9 +260,9 @@ a:hover{
     border: 1px solid #000;
     letter-spacing: 1px;
     padding:15px 60px;
-    
 }
 
+/* 箭頭 絕對定位 */
 .gallery .view a .arrow {
     position: absolute;
     right: -30%;
@@ -251,6 +270,7 @@ a:hover{
 }
 
 @media screen and (min-width: 992px) {
+    /* 桌機隱藏按鈕 */
     .gallery .view {
         display: none
     }

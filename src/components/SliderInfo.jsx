@@ -7,6 +7,7 @@ export default function SliderInfo() {
     <div className="slider-info">
       <div className="container">
         {/* 手機 */}
+        {/* link */}
         <ul className="info">
           <li>
             <a href="#/">NEWS</a>
@@ -33,6 +34,7 @@ export default function SliderInfo() {
             <a href="#/">WEIBO</a>
           </li>
         </ul>
+        {/* 輪播 */}
         <TopSlider />
       </div>
     </div>

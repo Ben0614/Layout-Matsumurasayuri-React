@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// 安裝並引入react-slick
 import Slider from 'react-slick'
 import './BottomSliderMobile.css'
 

@@ -2,20 +2,24 @@
   margin-bottom: 45px;
 }
 
+/* 圖片高度 */
 .slick-slider .pic {
   height: 250px;
   padding:0 10px;
 }
 
+/* 圖片樣式設定 */
 img{
   width:100%;
   height: 100%;
   object-fit: cover;
+  /* 讓圖片焦點在偏上方 */
   object-position: 50% 15%;
   margin: 0 auto;
 }
 
 @media screen and (min-width:992px){
+  /* 桌機關閉 */
   .bottomSlider {
     display: none;
   }
@@ -45,28 +49,6 @@ img{
   border: none;
   outline: none;
   background: transparent;
-}
-
-/* 觸碰到或聚焦到按鈕時，無字無色，無外框線，背景無色 */
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent;
-}
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: .25;
 }
 
 /* 預設的按鈕 */

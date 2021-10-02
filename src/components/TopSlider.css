@@ -1,19 +1,16 @@
+/* 圖片寬度 */
+/* topSlider是在jsx最外層自定的div */
 .topSlider .slick-slider {
   width: 90%;
   margin: 0 auto;
 }
 
-.topSlider{
-min-height: 0px;
-min-width: 0px
-}
-
-
-
+/* 圖片高度 (topPic是包裹img的div) */
 .topSlider .topPic {
   height: 500px;
 }
 
+/* 圖片樣式 */
 .topSlider img {
   height: 100%;
   object-fit: cover;
@@ -21,17 +18,16 @@ min-width: 0px
 }
 
 @media screen and (min-width: 992px) {
+  /* 調整大小 */
   .topSlider .slick-slider {
-    width: 70%;
+    width: 75%;
+    /* 讓圖片靠右 */
     margin: 0 0 0 auto;
   }
 
+  /* 高度調高 */
   .topSlider .topPic {
     height: 1000px;
-  }
-
-  .topSlider{
-    display: block;
   }
  
   }
@@ -60,28 +56,6 @@ min-width: 0px
   border: none;
   outline: none;
   background: transparent;
-}
-
-/* 觸碰到或聚焦到按鈕時，無字無色，無外框線，背景無色 */
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent;
-}
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: .25;
 }
 
 /* 預設的按鈕 */

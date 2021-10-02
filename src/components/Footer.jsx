@@ -5,9 +5,11 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
+        {/* logo */}
         <div className="logo">
           <img src="../images/mobile/logo.svg" alt="" />
         </div>
+        {/* link */}
         <div className="info">
           <p>
             <a href="#/">NEWS</a>
@@ -38,6 +40,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      {/* copyright */}
       <div className="copyright">&copy;乃木坂46LLC</div>
     </footer>
   )

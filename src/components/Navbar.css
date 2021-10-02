@@ -10,10 +10,6 @@
     z-index: 999
 }
 
-.navbar .height {
-    height: 72px;
-}
-
 .navbar .logo {
     width: 65%;
 }
@@ -43,6 +39,7 @@
 }
 
 @media screen and (min-width: 992px) {
+    /* 桌機時隱藏 */
     .navbar-height {
         display: none
     }

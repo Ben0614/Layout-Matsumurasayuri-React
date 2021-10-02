@@ -4,12 +4,14 @@ footer .logo {
     margin-bottom: 50px;
 }
 
+/* 手機板link換行 */
 footer .info {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
+/* 每個link寬度為33.3333% 一行放3個 */
 footer .info p {
     width: 33.3333%;
     text-align: center;
@@ -20,6 +22,7 @@ footer .info p a {
     color: rgba(0, 0, 0, .6)
 }
 
+/* 觸碰到link就變黑變粗 */
 footer .info p:hover a {
     font-weight: 700;
     color: #000
@@ -31,12 +34,14 @@ footer .info p:hover a {
 }
 
 @media screen and (min-width: 992px) {
+    /* 桌機link不換行 */
     footer .info {
         display: flex;
         flex-wrap: nowrap;
         margin-bottom: 20px;
     }
 
+    /* logo大小調整 */
     footer .logo {
         width: 20%;
         margin: 0 auto;

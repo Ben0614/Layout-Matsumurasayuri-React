@@ -4,13 +4,18 @@ export default function News() {
   return (
     <div class="container">
       <div class="news">
+        {/* 標題行 */}
         <div class="title-row">
+          {/* 標題 */}
           <div class="title">News</div>
+          {/* 展示更多按鈕 */}
           <div class="view">
             <a href="#/">VIEW ALL</a>
           </div>
         </div>
+        {/* item-gorup */}
         <div class="item-group">
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="time">
@@ -22,6 +27,7 @@ export default function News() {
               </div>
             </div>
           </a>
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="time">
@@ -33,6 +39,7 @@ export default function News() {
               </div>
             </div>
           </a>
+          {/* item */}
           <a href="#/">
             <div class="item">
               <div class="time">

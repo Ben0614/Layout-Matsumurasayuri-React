@@ -5,8 +5,10 @@ export default function Gallery() {
   return (
     <div className="gallery">
       <div className="container">
+      {/* 標題 */}
         <div className="title">GALLERY</div>
         {/* 桌機 */}
+        {/* 圖片牆 */}
         <div className="img-group">
           <div className="pic">
             <img src="../images/800_800_102400.jpg" alt="" />
@@ -35,8 +37,10 @@ export default function Gallery() {
         </div>
       </div>
       {/* 手機 */}
+      {/* 輪播 */}
       <BottomSliderMobile />
       {/* 手機 */}
+      {/* 展示更多按鈕 */}
       <div className="view">
         <a href="#/">
           <p>VIEW ALL</p>
