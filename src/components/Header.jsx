@@ -9,7 +9,7 @@ export default function Header() {
       <header>
         <div className="container">
           <div className="logo">
-            <img src="../images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt="" />
           </div>
         </div>
       </header>
@@ -19,7 +19,7 @@ export default function Header() {
         <div className="header-computer">
           {/* logo */}
           <div className="logo">
-            <img src="../images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt="" />
           </div>
           {/* link連結 */}
           <div className="info">

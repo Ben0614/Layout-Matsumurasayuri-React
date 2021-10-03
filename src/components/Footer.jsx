@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         {/* logo */}
         <div className="logo">
-          <img src="../images/mobile/logo.svg" alt="" />
+          <img src="./images/mobile/logo.svg" alt="" />
         </div>
         {/* link */}
         <div className="info">

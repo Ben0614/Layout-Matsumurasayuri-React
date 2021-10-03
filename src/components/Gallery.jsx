@@ -11,28 +11,28 @@ export default function Gallery() {
         {/* 圖片牆 */}
         <div className="img-group">
           <div className="pic">
-            <img src="../images/800_800_102400.jpg" alt="" />
+            <img src="./images/800_800_102400.jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (1).jpg" alt="" />
+            <img src="./images/800_800_102400 (1).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (2).jpg" alt="" />
+            <img src="./images/800_800_102400 (2).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (3).jpg" alt="" />
+            <img src="./images/800_800_102400 (3).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (4).jpg" alt="" />
+            <img src="./images/800_800_102400 (4).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (5).jpg" alt="" />
+            <img src="./images/800_800_102400 (5).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (6).jpg" alt="" />
+            <img src="./images/800_800_102400 (6).jpg" alt="" />
           </div>
           <div className="pic">
-            <img src="../images/800_800_102400 (7).jpg" alt="" />
+            <img src="./images/800_800_102400 (7).jpg" alt="" />
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Gallery() {
         <a href="#/">
           <p>VIEW ALL</p>
           <div className="arrow">
-            <img src="../images/mobile/arrow.png" alt="" />
+            <img src="./images/mobile/arrow.png" alt="" />
           </div>
         </a>
       </div>
