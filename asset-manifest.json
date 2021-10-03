@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/layout-matsumurasayuri-react/static/css/main.9ffc933b.chunk.css",
-    "main.js": "/layout-matsumurasayuri-react/static/js/main.4f1f4fd0.chunk.js",
-    "main.js.map": "/layout-matsumurasayuri-react/static/js/main.4f1f4fd0.chunk.js.map",
+    "main.js": "/layout-matsumurasayuri-react/static/js/main.b6795960.chunk.js",
+    "main.js.map": "/layout-matsumurasayuri-react/static/js/main.b6795960.chunk.js.map",
     "runtime-main.js": "/layout-matsumurasayuri-react/static/js/runtime-main.316032cc.js",
     "runtime-main.js.map": "/layout-matsumurasayuri-react/static/js/runtime-main.316032cc.js.map",
     "static/js/2.e9b4c729.chunk.js": "/layout-matsumurasayuri-react/static/js/2.e9b4c729.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.316032cc.js",
     "static/js/2.e9b4c729.chunk.js",
     "static/css/main.9ffc933b.chunk.css",
-    "static/js/main.4f1f4fd0.chunk.js"
+    "static/js/main.b6795960.chunk.js"
   ]
 }
