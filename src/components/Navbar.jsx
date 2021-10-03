@@ -10,7 +10,10 @@ export default function Navbar() {
         <div className="navbar">
           {/* logo */}
           <div className="logo">
-            <img src="./images/mobile/logo_lower_page.svg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/mobile/logo_lower_page.svg"
+              alt=""
+            />
           </div>
           {/* 漢堡選單 */}
           <div className="ham">

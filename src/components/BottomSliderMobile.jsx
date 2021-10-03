@@ -21,34 +21,64 @@ export default class BottomSliderMobile extends Component {
       <div className="bottomSlider">
         <Slider {...settings}>
           <div className="pic">
-            <img src="./images/800_800_102400.jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400.jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (1).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (1).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (2).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (2).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (3).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (3).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (4).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (4).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (5).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (5).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (6).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (6).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (7).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (7).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (8).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (8).jpg"
+              alt=""
+            />
           </div>
           <div className="pic">
-            <img src="./images/800_800_102400 (9).jpg" alt="" />
+            <img
+              src="/layout-matsumurasayuri-react/images/800_800_102400 (9).jpg"
+              alt=""
+            />
           </div>
         </Slider>
       </div>

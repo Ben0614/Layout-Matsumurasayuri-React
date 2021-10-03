@@ -18,48 +18,48 @@ export default class TopSlider extends Component {
           <div className="topPic">
             <img
               className="d-block d-lg-none"
-              src="./images/mobile/b558b7dd13c18c8f4d9e502b0544b-01.jpg"
+              src="/layout-matsumurasayuri-react/images/mobile/b558b7dd13c18c8f4d9e502b0544b-01.jpg"
               alt=""
             />
             <img
               className="d-none d-lg-block"
-              src="./images/b558b7dd13c18c8f4d9e502b0544b.jpg"
+              src="/layout-matsumurasayuri-react/images/b558b7dd13c18c8f4d9e502b0544b.jpg"
               alt=""
             />
           </div>
           <div className="topPic">
             <img
               className="d-block d-lg-none"
-              src="./images/mobile/7f0c5e36a81136f296e684a89fc17-01.jpg"
+              src="/layout-matsumurasayuri-react/images/mobile/7f0c5e36a81136f296e684a89fc17-01.jpg"
               alt=""
             />
             <img
               className="d-none d-lg-block"
-              src="./images/7f0c5e36a81136f296e684a89fc17.jpg"
+              src="/layout-matsumurasayuri-react/images/7f0c5e36a81136f296e684a89fc17.jpg"
               alt=""
             />
           </div>
           <div className="topPic">
             <img
               className="d-block d-lg-none"
-              src="./images/mobile/ac79b4584d8aba06a4c0a70ac05fa-01.jpg"
+              src="/layout-matsumurasayuri-react/images/mobile/ac79b4584d8aba06a4c0a70ac05fa-01.jpg"
               alt=""
             />
             <img
               className="d-none d-lg-block"
-              src="./images/ac79b4584d8aba06a4c0a70ac05fa.jpg"
+              src="/layout-matsumurasayuri-react/images/ac79b4584d8aba06a4c0a70ac05fa.jpg"
               alt=""
             />
           </div>
           <div className="topPic">
             <img
               className="d-block d-lg-none"
-              src="./images/mobile/2b9a525f218a4379e02da68691699-01.jpg"
+              src="/layout-matsumurasayuri-react/images/mobile/2b9a525f218a4379e02da68691699-01.jpg"
               alt=""
             />
             <img
               className="d-none d-lg-block"
-              src="./images/2b9a525f218a4379e02da68691699.jpg"
+              src="/layout-matsumurasayuri-react/images/2b9a525f218a4379e02da68691699.jpg"
               alt=""
             />
           </div>
