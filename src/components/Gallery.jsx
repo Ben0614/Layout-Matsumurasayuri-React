@@ -2,6 +2,16 @@ import React from 'react'
 import BottomSliderMobile from './BottomSliderMobile'
 
 export default function Gallery() {
+  const imgPathComputer = [
+    '/layout-matsumurasayuri-react/images/800_800_102400.jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (1).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (2).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (3).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (4).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (5).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (6).jpg',
+    '/layout-matsumurasayuri-react/images/800_800_102400 (7).jpg',
+  ]
   return (
     <div className="gallery">
       <div className="container">
@@ -10,54 +20,13 @@ export default function Gallery() {
         {/* 桌機 */}
         {/* 圖片牆 */}
         <div className="img-group">
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400.jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (1).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (2).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (3).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (4).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (5).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (6).jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic">
-            <img
-              src="/layout-matsumurasayuri-react/images/800_800_102400 (7).jpg"
-              alt=""
-            />
-          </div>
+          {imgPathComputer.map((v, i) => {
+            return (
+              <div className="pic">
+                <img src={v} alt="" />
+              </div>
+            )
+          })}
         </div>
       </div>
       {/* 手機 */}
