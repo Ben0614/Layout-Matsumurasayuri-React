@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import BottomSliderMobile from './BottomSliderMobile'
 
 export default function Gallery() {
@@ -12,6 +12,9 @@ export default function Gallery() {
     '/layout-matsumurasayuri-react/images/800_800_102400 (6).jpg',
     '/layout-matsumurasayuri-react/images/800_800_102400 (7).jpg',
   ]
+
+  const [showBigImg, setShowBigImg] = useState('')
+
   return (
     <div className="gallery">
       <div className="container">
@@ -22,7 +25,13 @@ export default function Gallery() {
         <div className="img-group">
           {imgPathComputer.map((v, i) => {
             return (
-              <div className="pic">
+              <div
+                className="pic"
+                key={i}
+                onClick={() => {
+                  setShowBigImg(i)
+                }}
+              >
                 <img src={v} alt="" />
               </div>
             )
@@ -46,6 +55,20 @@ export default function Gallery() {
         </a>
       </div>
       {/* 桌機 */}
+      <div className="big-img-group">
+        {imgPathComputer.map((v, i) => {
+          return (
+            <div className={showBigImg === i ? 'itemShow' : 'itemHide'} key={i}>
+              <div className="close" onClick={()=>{
+                setShowBigImg(-1)
+              }}>X</div>
+              <div className="pic">
+                <img src={v} alt="" />
+              </div>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

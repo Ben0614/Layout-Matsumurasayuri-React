@@ -2,6 +2,17 @@ import React from 'react'
 import TopSlider from './TopSlider'
 import './SliderInfo.css'
 
+// list內容
+const navbarContent = [
+  'TOP',
+  'NEWS',
+  'SCHEDULE',
+  'PROFILE',
+  'WORKS',
+  'GALLERY',
+  'CONTACT',
+]
+
 export default function SliderInfo(props) {
   return (
     <div className="slider-info">
@@ -9,32 +20,13 @@ export default function SliderInfo(props) {
         {/* 手機 */}
         {/* link */}
         <ul className="info">
-          <li>
-            <a href="#/">NEWS</a>
-          </li>
-          <li>
-            <a href="#/">SCHEDULE</a>
-          </li>
-          <li>
-            <a href="#/">PROFILE</a>
-          </li>
-          <li>
-            <a href="#/">WORKS</a>
-          </li>
-          <li>
-            <a href="#/">GALLERY</a>
-          </li>
-          <li>
-            <a href="#/">
-              TWITTER
-            </a>
-          </li>
-          <li>
-            <a href="#/">INSTAGRAM</a>
-          </li>
-          <li>
-            <a href="#/">WEIBO</a>
-          </li>
+          {navbarContent.map((v, i) => {
+            return (
+              <li>
+                <a href="#/">{v}</a>
+              </li>
+            )
+          })}
         </ul>
         {/* 輪播 */}
         <TopSlider />

@@ -81,6 +81,45 @@ a:hover{
     }
 }
 
+.big-img-group{
+    width: 100%;
+    height: 100%;
+}
+
+
+.big-img-group .itemHide{
+    position: fixed;
+    opacity:0;
+    z-index:  -1;
+    
+}
+.big-img-group .itemShow{
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    transition: .3s;
+}
+
+.big-img-group .item .pic{
+    width: 500px;
+    height: auto;
+}
+
+.big-img-group .close{
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   color:#fff;
+   font-size: 40px;
+   cursor: pointer;
+}
+
 /* 展示更多按鈕 */
 .news .view,
 .schedule .view {
