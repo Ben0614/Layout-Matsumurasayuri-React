@@ -27,7 +27,7 @@ export default class TopSlider extends Component {
     }
     return (
       <div className="topSlider">
-      {/* 手機 */}
+        {/* 手機 */}
         <Slider className="d-block d-lg-none" {...settings}>
           {imgPathxMobile.map((v, i) => {
             return (

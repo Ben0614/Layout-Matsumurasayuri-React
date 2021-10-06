@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import TopSlider from './TopSlider'
 import './SliderInfo.css'
 
-export default function SliderInfo() {
+export default function SliderInfo(props) {
+  const { twitter } = props
   return (
     <div className="slider-info">
       <div className="container">
@@ -25,7 +26,9 @@ export default function SliderInfo() {
             <a href="#/">GALLERY</a>
           </li>
           <li>
-            <a href="#/">TWITTER</a>
+            <a href="#/" ref={twitter}>
+              TWITTER
+            </a>
           </li>
           <li>
             <a href="#/">INSTAGRAM</a>
