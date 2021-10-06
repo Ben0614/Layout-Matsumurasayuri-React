@@ -9,13 +9,13 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const twitter = useRef()
+  const news = useRef()
   return (
     <>
-      <Navbar twitter={twitter} />
+      <Navbar setNews={news} />
       <Header />
-      <SliderInfo twitter={twitter} />
-      <News />
+      <SliderInfo />
+      <News getNews={news} />
       <Schedule />
       <Gallery />
       <Footer />

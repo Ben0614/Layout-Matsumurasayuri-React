@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function News() {
+export default function News(props) {
+  const { getNews } = props
   return (
-    <div className="container">
+    <div className="container" ref={getNews}>
       <div className="news">
         {/* 標題行 */}
         <div className="title-row">
