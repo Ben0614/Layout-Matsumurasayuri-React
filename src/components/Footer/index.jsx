@@ -20,10 +20,7 @@ export default function Footer() {
       <div className="container">
         {/* logo */}
         <div className="logo">
-          <img
-            src="/matsumurasayuri-rwd-react/images/mobile/logo.svg"
-            alt=""
-          />
+          <img src="/matsumurasayuri-rwd-react/images/mobile/logo.svg" alt="" />
         </div>
         {/* link */}
         <ul className="info">

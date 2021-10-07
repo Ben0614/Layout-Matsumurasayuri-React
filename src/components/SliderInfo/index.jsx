@@ -20,7 +20,7 @@ export default function SliderInfo(props) {
         {/* 手機 */}
         {/* link */}
         <ul className="info">
-        {/* 迴圈生成內容 */}
+          {/* 迴圈生成內容 */}
           {navbarContent.map((v, i) => {
             return (
               <li>
