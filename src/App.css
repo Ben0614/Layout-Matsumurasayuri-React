@@ -1,12 +1,12 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
 }
 
-#root{
+#root {
     padding: 25px 0;
 }
 
@@ -16,12 +16,14 @@
     }
 }
 
-ul,ol,p{
+ul,
+ol,
+p {
     list-style: none;
     margin-bottom: 0;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -36,8 +38,8 @@ a:hover{
 /* flex讓標題行水平對齊 */
 .news .title-row,
 .schedule .title-row {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -51,101 +53,34 @@ a:hover{
 }
 
 /* gallery沒有-row，所以要額外加mb15 */
-.gallery .title{
-    margin: 0 0 15px 0;
-}
-
-/* 圖片牆，手機隱藏 */
-.img-group {
-    display: none;
-}
-
-@media screen and (min-width: 992px) {
-    /* 圖片牆，flex換行，一行四張 */
-    .img-group{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    /* 圖片尺寸 */
-    .img-group .pic{
-        width: 270px;
-        height: 270px;
-        margin-bottom: 10px;
-    }
-
-    .img-group .pic img{
-        object-fit: cover;
-        object-position: 50% 15%;
-    }
-}
-
-.big-img-group{
-    width: 100%;
-    height: 100%;
-}
-
-
-.big-img-group .itemHide{
-    position: fixed;
-    opacity:0;
-    z-index:  -1;
-    
-}
-.big-img-group .itemShow{
-    position: fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.7);
-    transition: .3s;
-}
-
-.big-img-group .item .pic{
-    width: 500px;
-    height: auto;
-}
-
-.big-img-group .close{
-   position: absolute;
-   top: 30px;
-   right: 30px;
-   color:#fff;
-   font-size: 40px;
-   cursor: pointer;
+.gallery .title {
+    margin-bottom: 15px;
 }
 
 /* 展示更多按鈕 */
 .news .view,
 .schedule .view {
-    position:relative;
-    font-weight:500px;
-    
+    position: relative;
+    font-weight: 500px;
+
 }
 
 .news .view a,
 .schedule .view a {
-    color:#000
-    
+    color: #000
 }
 
 /* 按鈕底下的黑線 */
 .news .view::before,
 .schedule .view::before {
-    content:'';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     height: 1px;
     width: 100%;
     background-color: #000;
-    transition:.5s
-    
+    transition: .5s
 }
 
 /* 碰觸就消失 */
@@ -154,164 +89,9 @@ a:hover{
     width: 0%;
 }
 
-/* 裡面有左右兩區，flez水平對齊 */
-.news .item {
-    display:flex;
-    justify-content:space-between;
-    align-content: center;
-    margin-bottom: 20px;
-    color:#000
-}
-
-/* 時間垂直對齊 */
-/* 左側時間寬度22% */
-.news .time {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(22%);
-}
-
-.news .date {
-    margin-bottom: 5px;
-}
-
-.news .cate {
-    text-align: center;
-    border:1px solid #000;
-    padding:1px 10px
-}
-/* 右側寬度70% 剩下8%當作間隔*/
-.news .content {
-    width: calc(70%);
-}
-
 .news .content p,
 .schedule .content p {
-    letter-spacing:2px;
+    letter-spacing: 2px;
     font-size: 15px;
-    color:rgba(0,0,0,.6)
+    color: rgba(0, 0, 0, .6)
 }
-
-@media screen and (min-width: 992px) {
-    /* 桌機 時間和類別水平 */
-    .news .time {
-        flex-direction: row;
-        justify-content:space-between;
-        align-items:center;
-        width: 18%;
-    }
-
-    .news .cate {
-        text-align: center;
-        border: 1px solid #000;
-        padding: 2px 15px
-    }
-
-    /* 調整寬度 */
-    .news .content {
-        width: 77%;
-    }
-}
-
-/* flex水平分成兩區 */
-.schedule .item {
-    display: flex;
-    justify-content:space-between;
-    border-bottom:1px dashed #000;
-    padding:15px;
-    color:#000;
-}
-
-/* 時間垂直排列 */
-.schedule .item .date{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    width: 20%;
-}
-
-.schedule .item .day{
-    font-size: 30px;
-}
-.schedule .item .week{
-    border-bottom: 1px solid #000;
-    margin-bottom: 2px;
-    padding-bottom: 2px;
-}
-
-.schedule .item .content{
-    width: 70%;
-}
-
-
-.schedule .item .content .cate-time {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.schedule .item .cate a{
-    background-color: #000;
-    color:#fff;
-    padding:1px 30px;
-
-}
-
-.schedule .item .time{
-    margin-left: 10px;
-    color:rgba(0, 0, 0, .6)
-}
-
-@media screen and (min-width: 992px) {
-
-    .schedule .item .date {
-        align-items: flex-start;
-        width: 15%;
-        margin-left: 15px;
-    }
-
-    /* flex垂直置中對齊 */
-    .schedule .item .content {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 85%;
-    }
-
-    .schedule .item .cate a {
-        padding: 5px 30px;
-
-    }
-}
-
-/* 手機 展示更多按鈕 */
-.gallery .view{
-   display: flex;
-   justify-content: center;
-   
-}
-
-/* 加邊框 padding撐開 */
-.gallery .view a{
-    display:inline-block;
-    position: relative;
-    color:#000;
-    border: 1px solid #000;
-    letter-spacing: 1px;
-    padding:15px 60px;
-}
-
-/* 箭頭 絕對定位 */
-.gallery .view a .arrow {
-    position: absolute;
-    right: -30%;
-    top: 15%;
-}
-
-@media screen and (min-width: 992px) {
-    /* 桌機隱藏按鈕 */
-    .gallery .view {
-        display: none
-    }
-}
-

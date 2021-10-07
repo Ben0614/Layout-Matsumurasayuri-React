@@ -1,0 +1,26 @@
+/* 圖片牆，手機隱藏 */
+.img-group {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    /* 圖片牆，flex換行，一行四張 */
+    .img-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* 圖片尺寸 */
+    .img-group .pic {
+        width: 270px;
+        height: 270px;
+        margin-bottom: 10px;
+    }
+
+    .img-group .pic img {
+        object-fit: cover;
+        object-position: 50% 15%;
+    }
+}

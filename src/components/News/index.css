@@ -1,0 +1,58 @@
+/* 裡面有左右兩區，flex水平對齊 */
+.news .item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 20px;
+    color: #000
+}
+
+/* 時間垂直對齊 */
+/* 左側時間寬度22% */
+.news .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(22%);
+}
+
+.news .date {
+    margin-bottom: 5px;
+}
+
+.news .cate {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 1px 10px
+}
+
+/* 右側寬度70% 剩下8%當作間隔*/
+.news .content {
+    width: calc(70%);
+}
+
+@media screen and (min-width: 992px) {
+
+    .news .item {
+        margin-bottom: 40px;
+    }
+
+    /* 桌機 時間和類別水平 */
+    .news .time {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 18%;
+    }
+
+    .news .cate {
+        text-align: center;
+        border: 1px solid #000;
+        padding: 2px 15px
+    }
+
+    /* 調整寬度 */
+    .news .content{
+        width: 77%;
+    }
+}

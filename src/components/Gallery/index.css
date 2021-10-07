@@ -1,0 +1,31 @@
+/* 手機 展示更多按鈕 */
+.gallery .view {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* 加邊框 padding撐開 */
+.gallery .view a {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    padding: 15px 60px;
+}
+
+/* 箭頭 絕對定位 */
+.gallery .view a .arrow {
+    position: absolute;
+    right: -30%;
+    top: 15%;
+}
+
+@media screen and (min-width: 992px) {
+
+    /* 桌機隱藏按鈕 */
+    .gallery .view {
+        display: none
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import TopSlider from './TopSlider'
-import './SliderInfo.css'
+import './index.css'
 
 // list內容
 const navbarContent = [
@@ -20,6 +20,7 @@ export default function SliderInfo(props) {
         {/* 手機 */}
         {/* link */}
         <ul className="info">
+        {/* 迴圈生成內容 */}
           {navbarContent.map((v, i) => {
             return (
               <li>

@@ -12,18 +12,18 @@ footer .info {
 }
 
 /* 每個link寬度為33.3333% 一行放3個 */
-footer .info p {
+footer .info li {
     width: 33.3333%;
     text-align: center;
     margin-bottom: 30px;
 }
 
-footer .info p a {
+footer .info li a {
     color: rgba(0, 0, 0, .6)
 }
 
 /* 觸碰到link就變黑變粗 */
-footer .info p:hover a {
+footer .info li:hover a {
     font-weight: 700;
     color: #000
 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
-import './Navbar.css'
+import './index.css'
 
 // list內容
-const navbarContent = [
+const content = [
   'TOP',
   'NEWS',
   'SCHEDULE',
@@ -13,23 +13,28 @@ const navbarContent = [
 ]
 
 export default function Navbar(props) {
+  // 獲取news
   const { setNews } = props
+  // 設定navbar和漢堡選單的ref
   const navbarIsShow = useRef()
   const listIsShow = useRef()
   const topLine = useRef()
   const centerLine = useRef()
   const bottomLine = useRef()
 
+  // 設定鉤子，一掛載就監聽滾動事件
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, [])
 
+  // 設定鉤子，一卸載就清除監聽滾動事件
   useEffect(() => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
+  // 如果頁面下滑的高度大於News區塊距離頂部的高度，就讓navbarIsShow添加和移除class
   const handleScroll = () => {
     if (window.pageYOffset > setNews.current.offsetTop) {
       navbarIsShow.current.classList.add('isShow')
@@ -40,8 +45,11 @@ export default function Navbar(props) {
     }
   }
 
+  // 點擊漢堡選單，切換漢堡list的class
   const hanChange = () => {
     listIsShow.current.classList.toggle('listShow')
+    // 改變漢堡選單的樣式
+    // 先判斷漢堡list是否有被開啟，然後再修改漢堡選單的樣式
     if (listIsShow.current.classList.contains('listShow')) {
       topLine.current.classList.add('top-open')
       centerLine.current.classList.add('center-open')
@@ -55,19 +63,19 @@ export default function Navbar(props) {
 
   return (
     <>
-      {/* // 手機
-    // 外表包一層設定高度，這樣用fixed就不會讓底下的盒子跑上來 */}
+      {/* 手機 */}
       <div className="navbar" ref={navbarIsShow}>
         {/* logo */}
         <div className="logo">
           <img
-            src="/layout-matsumurasayuri-react/images/mobile/logo_lower_page.svg"
+            src="/matsumurasayuri-rwd-react/images/mobile/logo_lower_page.svg"
             alt=""
           />
         </div>
         {/* 漢堡選單 */}
         <div
           className="ham"
+          // 點擊漢堡，調用hanChange
           onClick={() => {
             hanChange()
           }}
@@ -80,9 +88,8 @@ export default function Navbar(props) {
 
       <div class="ham-list" ref={listIsShow}>
         <ul>
-          {/* map */}
-
-          {navbarContent.map((v, i) => {
+          {/* 迴圈content生成內容 */}
+          {content.map((v, i) => {
             return (
               <li>
                 <a href="#/">{v}</a>

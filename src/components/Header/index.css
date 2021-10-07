@@ -34,12 +34,12 @@ header .logo {
     }
 
     /* 每個link的mb40 */
-    .header-computer .info p {
+    .header-computer .info li {
         margin-bottom: 40px;
     }
 
     /* link文字樣式 */
-    .header-computer .info p a {
+    .header-computer .info li a {
         color: #000;
         font-size: 24px;
     }
