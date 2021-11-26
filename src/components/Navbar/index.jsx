@@ -36,7 +36,7 @@ export default function Navbar(props) {
 
   // 如果頁面下滑的高度大於News區塊距離頂部的高度，就讓navbarIsShow添加和移除class
   const handleScroll = () => {
-    if (window.pageYOffset > setNews.current.offsetTop) {
+    if (document.documentElement.scrollTop > setNews.current.offsetTop) {
       navbarIsShow.current.classList.add('isShow')
       navbarIsShow.current.classList.remove('isHide')
     } else {
